@@ -5,7 +5,24 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-  // TODO: YOUR CODE HERE
+  int main() {
+    string s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+
+    string min_str;
+
+    if (s1 <= s2 && s1 <= s3) {
+        min_str = s1;
+    } else if (s2 <= s1 && s2 <= s3) {
+        min_str = s2;
+    } else {
+        min_str = s3;
+    }
+
+    cout << min_str << endl;
+
+    return 0;
+}
 }
 
 void exercise_2(double A, double B, double C) {
