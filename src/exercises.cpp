@@ -5,9 +5,6 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-    string s1, s2, s3;
-    cin >> s1 >> s2 >> s3;
-
     string min_str;
 
     if (s1 <= s2 && s1 <= s3) {
@@ -19,30 +16,22 @@ void exercise_1(string s1, string s2, string s3) {
     }
 
     cout << min_str << endl;
+}
 
-    return 0;
-}
-}
 
 void exercise_2(double A, double B, double C) {
-    double A, B, C;
-    cin >> A >> B >> C;
-
     double discriminante = B * B - 4 * A * C;
 
     if (discriminante > 0) {
         double x1 = (-B + sqrt(discriminante)) / (2 * A);
         double x2 = (-B - sqrt(discriminante)) / (2 * A);
-        cout << x1 << " " << x2 << endl;
+        cout << "x1 = " << x1 << ", x2 = " << x2 << endl;
     } else if (discriminante == 0) {
         double x = -B / (2 * A);
-        cout << x << endl;
+        cout << "x = " << x << endl;
     } else {
         cout << "No hay raíces reales distintas" << endl;
     }
-
-    return 0;
-}
 }
 
 void exercise_3(int a, int b) {
